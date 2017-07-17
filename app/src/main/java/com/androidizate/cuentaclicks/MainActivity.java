@@ -7,7 +7,33 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
+    //Declaro las variables locales de la clase
+    private Integer clicks = 0;
+    EditView cantidadDeClicks;
+    Button botonClicks;
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        //Obtengo las referencias a los controles
+        cantidadDeClicks = (EditText)findViewById(R.id.tv_contador);
+        botonClicks = (Button)findViewById(R.id.btn_sumar);
+        
+        //Defino el comportamiento del boton
+        botonClicks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cantidadDeClicks.setText(sumarClicks().toString());
+            }
+    }
+                                       
+    private Integer sumarClicks(){
+        return clicks += 1;
+    }
+    
+    /*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,4 +47,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    */
 }
