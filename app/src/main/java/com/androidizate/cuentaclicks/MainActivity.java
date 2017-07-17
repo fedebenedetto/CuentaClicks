@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     //Declaro las variables locales de la clase (convencion para saber que controles tiene la activity)
