@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     //Declaro las variables locales de la clase (convencion para saber que controles tiene la activity)
-    private Integer clicks = 0;
+    private int clicks = 0;
     EditText cantidadDeClicks;
     Button botonClicks;
     
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
                                        
-    private Integer sumarClicks(){
+    private int sumarClicks(){
         return clicks += 1;
     }
     
