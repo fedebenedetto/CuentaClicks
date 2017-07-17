@@ -25,8 +25,9 @@ public class MainActivity extends AppCompatActivity {
         botonClicks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                cantidadDeClicks.setText(sumarClicks().toString());
+                cantidadDeClicks.setText(String.valueOf(sumarClicks()));
             }
+        }
     }
                                        
     private Integer sumarClicks(){
