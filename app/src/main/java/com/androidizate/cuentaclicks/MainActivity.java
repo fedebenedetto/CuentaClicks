@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    //Declaro las variables locales de la clase
+    //Declaro las variables locales de la clase (convencion para saber que controles tiene la activity)
     private Integer clicks = 0;
     EditView cantidadDeClicks;
     Button botonClicks;
